@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+}
+img{
+    width: 30%;
+    margin: 1.5%;
+}
+button{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    border: 2px solid #1f1f1f;
+    padding: 0.6% 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 10em;
+}
+nav
+{
+    color: #151b29;
+    border-bottom: 2px solid #1f1f1f; 
+    font-size: 2em;
+    margin-left: 1.5%;
+  
+    text-decoration: none;
+    padding: 20px 0;
+}
+
+nav .social-link {
+  position: relative;
+}
+
+nav .social-link:hover .social-media {
+  opacity: 1;
+  transform: translateY(50px);
+  pointer-events: auto;
+}
+
+.header{
+    background-color: #151b29;
+    color: white;
+    padding: 1.5%;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+main{
+    background-color: #151b29;
+    color: white;
+    padding: 1.5%;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    transition: all 3s;
+}
+
+main:hover{
+    background-color: #ffffff
+}
+img:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+    box-shadow:  0 0 0 1000px rgba(0,0,0,0.7);
+}
+
+button:hover{
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-out;
+  transform: translateY(100%);
+}
+
+body:not(.scroll-up) .footer {
+  transform: translateY(0%);
+}
+/* .my-button {
+  position: relative;
+  padding: 0.6% 1%;
+  background-color: #151b29;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+} */
+
+.my-button::before,
+.my-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease-out;
+}
+
+.my-button::before {
+  background-color: #151b29;
+  opacity: 0;
+}
+
+.my-button:hover::before {
+  opacity: 1;
+}
+
+.my-button::after {
+  content: 'Created by: Vishal Singh' ;
+  color: #fff;
+  opacity: 0;
+    top: +100%;
+}
+
+.my-button:hover::after {
+  opacity: 1;
+}
